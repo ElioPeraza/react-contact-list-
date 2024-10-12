@@ -2,7 +2,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
   return {
     store: {
-      username: 'pancho',//Cambiar acá con el nombre de usuario que quieran utilizar
+      username: 'elio',//Cambiar acá con el nombre de usuario que quieran utilizar
       contactList: [],
       apiUrlContactList: 'https://playground.4geeks.com/contact'
     },
@@ -61,6 +61,7 @@ const getState = ({ getStore, getActions, setStore }) => {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify(contact)
+            
           })
 
           if (response.ok) {
@@ -107,6 +108,7 @@ const getState = ({ getStore, getActions, setStore }) => {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify(contact)
+            
           });
 
           if (response.ok) {
