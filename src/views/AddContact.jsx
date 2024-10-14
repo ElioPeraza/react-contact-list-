@@ -22,14 +22,13 @@ export const AddContact = () => {
     let response = await actions.createContact(contacto);
     if (response) {
       Swal.fire('Contacto agregado con éxito!');
-      // Limpiar los estados
       setName('');
       setEmail('');
       setPhone('');
       setAddress('');
     } else {
       Swal.fire('Error al agregar contacto');
-      // Mantener valores de los estados
+      
     }
   };
 
